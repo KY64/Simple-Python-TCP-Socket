@@ -95,5 +95,7 @@ for loop in range(client):
     serverThread.start()
     serverThread.join()
 
-clientThread.start()
-clientThread.join()
+threads[0].start()
+threads[1].start()
+threads[0].join()
+threads[1].join()
