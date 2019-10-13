@@ -6,7 +6,7 @@ def randNumber():
         num = random.randint(1,100)
         numbers.append(num)
 
-client = input("How many? ")
+client = input("How many data? ")
 client = int(client)
 
 #Menggunakan TCP socket
