@@ -94,8 +94,7 @@ for loop in range(client):
     serverThread = threading.Thread(target=init)
     serverThread.start()
     serverThread.join()
+    threads[loop].start()
 
-threads[0].start()
-threads[1].start()
-threads[0].join()
-threads[1].join()
+for loop in range(client):
+    threads[loop].join()
